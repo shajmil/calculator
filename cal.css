@@ -1,0 +1,142 @@
+.num button:hover{
+    font-size: 20px;
+    transform: translate(2);
+     background: linear-gradient(to top, hsl(208, 30%, 35%), hsl(208, 30%, 40%));
+
+}
+ .controls button{
+        color: hsl(34, 48%, 76%);;
+    }
+    .topButton button {
+        color: rgb(110, 110, 110);
+    }
+   button{
+    cursor: pointer;
+   }
+.calculator{
+    background: hsl(208, 28%, 35%);
+    background: linear-gradient(to top, hsl(208, 30%, 35%), hsl(208, 30%, 40%));
+    height: 465px;
+    width: 288px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 100px 30px;
+    border-bottom-right-radius: 100px 30px;
+    margin:100px auto;
+}
+.top{
+    display: flex;
+    justify-content:space-around ;
+}
+.top p{
+    color:white;
+}
+.top_middle{
+    margin-top: 45px;
+    color: rgb(215,140,149) !important;
+}.screen
+{
+    background: #DAE4E7;
+    margin: 0 25px;
+    border-radius: 4px;
+    height: 61.2px;
+}
+.screen p{
+    margin-bottom: 0px;
+padding: 10px 0 0 10px;
+    font-family: 'Scientific Calculator LCD', monospace;
+}
+.input{
+    margin-top: 0;
+}
+.result{
+    padding: 10px 0 0 10px;
+    margin-top: 0;
+}
+.result{
+    font-size: 28px;
+    text-align: right;
+    padding-top: 0 !important;
+    padding-right: 34px !important;
+}
+button{
+    width: 2.35rem;
+    height: 1.25rem;
+    border-radius: 15px;
+    border: none !important;
+    margin-right: .75rem;
+    background: hsl(221, 14%, 66%);
+    background: linear-gradient(to top, hsl(221, 14%, 66%), hsl(221, 14%, 71%));
+
+    box-shadow:   2px 2px 5px 0 hsla(0, 0%, 0%, .75);
+}
+.button{
+margin-top: 15px;
+margin-left: 20px;
+}
+.button2{
+    margin-top: -15px;
+    align-self: end;
+}
+.topButton{
+    height: 55px;
+    display: flex;
+}
+.button3{
+    margin-top: 15px;
+ 
+}
+.buttonCenter{
+    height: 68px;
+    width: 63px;
+    margin-top: 25px;margin-left: -3px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 25px 0 0 0;
+}
+.button5{
+    margin-left: .75rem;
+}
+ .button10 {
+    background: linear-gradient(to top, hsl(198, 39%, 23%), hsl(198, 39%, 28%)) !important;
+}
+.controls button{
+    width: 2.25rem;
+height: 1.5rem;
+border-radius: 5px;
+margin-left: 26px;
+margin-top: 10px;
+}
+.button6{
+    margin-right: 8px;
+}
+.button7{
+    margin-left: 0 !important;
+}
+
+.button9{
+    margin-left: 0!important;
+}
+.num button{
+    width: 2.5rem;
+  height: 1.75rem;
+  background: hsl(221, 14%, 66%);
+  background: linear-gradient(to top, hsl(221, 14%, 66%), hsl(221, 14%, 71%));
+  border-radius: 3px 3px 7px 7px;
+  color: white;
+}
+.num{
+margin-top: 25px;
+margin-left: 9px;
+    display: grid;
+grid-template-rows: repeat(4,1fr);
+grid-template-columns: repeat(5,1fr);
+justify-items:  center;
+gap:5px;
+row-gap: 15px;
+
+}
+
+.on{
+    color:rgb(221, 105, 119) !important
+}

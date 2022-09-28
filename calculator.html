@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+    <script src="cal.js"></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="top">
+            <p> Shajmil</p>
+            
+            <p class="top_middle"> luminar</p>
+            <p style="color:rgb(206,210,222);"> fx-3214</p>
+
+        </div>
+        <div class="screen">
+
+      <p class="input" >Please Switch on!!!!</p>
+      <p class="result">&nbsp;</p>
+        </div>
+<div class="topButton" >
+
+    
+    <button  class="button"> shift </button>
+    <button  class="button2"> alpha </button>
+    <button  class="buttonCenter"> Replay</button>
+    <button  class="button5 button2 cls"> CLR</button>
+    <button  class="button3 on"> ON </button>
+    
+</div>
+<div class="controls">
+    <button  class="button6 button10" style="margin-left: 20px;"> SIN</button>
+    <button  class="button7 button10">COS </button>
+    <button  class="button8 button10" style="margin-left: 72px;margin-right: 7px;"> TAN</button>
+    <button  class="button9 button10"> ENG </button>
+
+</div>
+<div class="num">
+
+
+<button class="digit exp">7</button>
+<button class="digit exp">8</button>
+<button class="digit exp">9</button>
+<button class="digit del">DEL</button>
+<button class="digit ">AC</button>
+<button class="digit exp">4</button>
+<button class="digit exp">5</button>
+<button class="digit exp">6</button>
+<button class="digit exp">*</button>
+<button class="digit exp">/</button>
+<button class="digit exp">1</button>
+<button class="digit exp">2</button>
+<button class="digit exp">3</button>
+<button class="digit exp">+</button>
+<button class="digit exp">-</button>
+<button class="digit exp">0</button>
+<button class="digit ">.</button>
+<button class="digit ">EXP</button>
+<button class="digit prev">ANS</button>
+<button class="digit equal ">=</button>
+
+
+</div>
+
+
+    </div>
+</body>
+<script> 
+let on=document.querySelector('.on')
+
+let eqn ='';
+// exp="3+6";
+
+// console.log('result: ', result);
+// let er = function(exp){
+//    return Function(`return (${exp})`)()
+// }
+// let result=er(exp);
+
+
+
+let digits=document.querySelectorAll(".exp")
+let [input]=document.getElementsByClassName("input")
+let result=document.querySelector(".result"); 
+// console.log(digits);
+
+on.addEventListener('click',()=>{
+ 
+
+document.querySelectorAll('.exp').forEach(item => {
+  item.addEventListener('click', event => {
+      eqn=eqn+item.innerHTML;
+      input.innerHTML=eqn; 
+    //   console.log(input.innerHTML);
+   document.querySelector(".equal").addEventListener('click',()=>{
+    ans =   eval(eqn);   result.innerHTML=ans
+;})
+    document.querySelector(".cls").addEventListener('click',()=>{
+    eqn=``; result.innerHTML='';  input.innerHTML=eqn })  
+  
+ })
+
+    // return eqn;
+})
+document.querySelector(".del").addEventListener('click',()=>{
+   eqn=eqn.slice(0,-1); 
+//    console.log(eqn);
+   input.innerHTML=eqn;
+
+})
+document.querySelector(".prev").addEventListener('click',()=>{
+   
+//    console.log(eqn);
+   input.innerHTML=ans;
+   eqn=ans
+
+})
+})
+</script>
+</html>
